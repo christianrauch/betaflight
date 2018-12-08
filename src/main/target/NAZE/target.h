@@ -52,6 +52,18 @@
 //#define BARO_XCLR_PIN           PC13
 //#define BARO_EOC_PIN            PC14
 
+// #undef USE_ACRO_TRAINER
+#undef USE_BLACKBOX
+#undef USE_LED_STRIP
+// #undef USE_RESOURCE_MGMT
+#undef USE_RUNAWAY_TAKEOFF     // Runaway Takeoff Prevention (anti-taz)
+#undef USE_SERVOS
+// #undef USE_TELEMETRY
+#undef USE_TELEMETRY_FRSKY_HUB
+#undef USE_TELEMETRY_HOTT
+#undef USE_TELEMETRY_LTM
+// #undef USE_TELEMETRY_SMARTPORT
+
 #define INVERTER_PIN_UART2        PB2 // PB2 (BOOT1) abused as inverter select GPIO
 
 #define USE_RX_MSP
@@ -81,45 +93,25 @@
 #define USE_FLASH_M25P16
 
 #define USE_GYRO
-// #define USE_GYRO_MPU3050
-// #define USE_GYRO_MPU6050
 #define USE_GYRO_MPU6500
 #define USE_GYRO_SPI_MPU6500
 
-// #define GYRO_MPU3050_ALIGN      CW0_DEG
-// #define GYRO_MPU6050_ALIGN      CW0_DEG
 #define GYRO_MPU6500_ALIGN      CW0_DEG
 
 #define USE_ACC
-//#define USE_ACC_ADXL345
-//#define USE_ACC_BMA280
-//#define USE_ACC_MMA8452
-// #define USE_ACC_MPU6050
 #define USE_ACC_MPU6500
 #define USE_ACC_SPI_MPU6500
 
-//#define ACC_ADXL345_ALIGN       CW270_DEG
-// #define ACC_MPU6050_ALIGN       CW0_DEG
-//#define ACC_MMA8452_ALIGN       CW90_DEG
-//#define ACC_BMA280_ALIGN        CW0_DEG
 #define ACC_MPU6500_ALIGN       CW0_DEG
 
 #define USE_BARO
 #define USE_BARO_MS5611 // needed for Flip32 board
-// #define USE_BARO_BMP280
 
 /*
 #define USE_MAG
 #define USE_MAG_HMC5883
 #define MAG_HMC5883_ALIGN       CW180_DEG
 */
-
-//#define USE_RANGEFINDER
-//#define USE_RANGEFINDER_HCSR04
-//#define RANGEFINDER_HCSR04_TRIGGER_PIN       PB0
-//#define RANGEFINDER_HCSR04_ECHO_PIN          PB1
-//#define RANGEFINDER_HCSR04_TRIGGER_PIN_PWM   PB8
-//#define RANGEFINDER_HCSR04_ECHO_PIN_PWM      PB9
 
 #define USE_UART1
 #define USE_UART2
